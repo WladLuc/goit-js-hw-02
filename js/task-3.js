@@ -1,13 +1,13 @@
 function checkForSpam(message) {
   
-  const tolowercaseMessage = message.toLowerCase();
+  const normalizedMessage = message.toLowerCase();
  
-  if (tolowercaseMessage.includes("spam")) {
-    return "true";
-  } else if (tolowercaseMessage.includes("sale")) {
-    return "true";
+  if (normalizedMessage.includes("spam")) {
+    return true;
+  } else if (normalizedMessage.includes("sale")) {
+    return true;
   } else { 
-    return "false";
+    return false;
   }
   
 }
